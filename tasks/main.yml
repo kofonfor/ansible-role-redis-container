@@ -9,4 +9,4 @@
     exposed_ports:
       - 6379
     ports:
-      - "6379:6379"
+      - "{{ redis_container_host_address }}:{{ redis_port }}:6379"
